@@ -1,0 +1,246 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>Screenshots</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link rel="stylesheet" href="bootstrap-icons/bootstrap-icons.css">
+<!-- JQuery -->
+<script type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script><!-- Required Stylesheets -->
+<link href="bootstrap-treeview/dist/bootstrap-treeview.min.css" rel="stylesheet">
+
+<!-- Required Javascript -->
+<script src="bootstrap-treeview/dist/bootstrap-treeview.min.js"></script><!-- DataTables -->
+<link type="text/css" href="datatables/1.13.1/datatables.min.css" rel="stylesheet" />
+<script type="text/javascript" src="datatables/1.13.1/datatables.min.js"></script>
+<script type="text/javascript" src="datatables/1.13.1/time-elapsed-dhms.js"></script>
+
+<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+<script>
+    jQuery.fn.dataTable.ext.type.order['time-elapsed-dhms-pre'] = function(data) {
+
+        var matches = data.match(/^(\d+(?:\.\d+)?)\s*([a-z]+)/i);
+        var multipliers = {
+            ms: 1,
+            s: 1000,
+            m: 60000,
+            h: 3600000,
+            d: 86400000
+        };
+
+        if (matches) {
+            var multiplier = multipliers[matches[2].toLowerCase()];
+            return parseFloat(matches[1]) * multiplier;
+        } else {
+            return -1;
+        };
+    };
+</script>
+<link rel="stylesheet" href="css/core.css"/>
+<link rel="stylesheet" href="css/link.css"/>
+<link type="text/css" media="screen" href="css/screen.css" rel="Stylesheet"/>
+<!--CHART.JS-->
+<script src="chartjs/chart.js"></script>
+<script src="chartjs/chartjs-plugin-datalabels@2.0.0"></script>
+<script src="chartjs/patternomaly.min.js"></script>
+<script>
+    // Register the plugin to all charts:
+    Chart.register(ChartDataLabels);
+</script>
+<!-- Nivo Slider -->
+<link rel="stylesheet" href="nivo-slider/3.2/nivo-slider.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="nivo-slider/3.2/themes/default/default.css" type="text/css" media="screen" />
+<script src="nivo-slider/3.2/jquery.nivo.slider.pack.js" type="text/javascript"></script>
+
+    <script type="text/javascript">
+
+        function getUrlVars() {
+            var vars = {};
+            var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function (m, key, value) {
+                vars[key] = value;
+            });
+            return vars;
+        }
+
+        var screenshotIndex = getUrlVars()["screenshot"];
+
+        $(window).load(function () {
+            $('#slider').nivoSlider({
+                startSlide: screenshotIndex,
+                effect: 'fade',
+                animSpeed: 200,
+                manualAdvance: true
+            });
+        });
+
+        $(window).keydown(function(e) {
+            switch(e.which) {
+                case 37:
+                    $('a.nivo-prevNav').click();
+                    break;
+                case 39:
+                    $('a.nivo-nextNav').click();
+                    break;
+            }
+        });
+    </script>
+
+</head>
+
+<body>
+<div id="topheader">
+    <div id="topbanner">
+        <div id="logo"><a href="index.html"><img src="images/serenity-logo.png" border="0"/></a></div>
+        <div id="projectname-banner" style="float:right">
+            <span class="projectname">
+                <span class="projecttitle">Serenity BDD Report</span>
+                <span class="projectsubtitle"></span>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="middlecontent">
+    <div id="contenttop">
+        <div class="middlebg">
+            <span class="breadcrumbs">
+                <a href="index.html">Home</a>
+                > <span class="truncate-40"><a
+                    href="7f411039354dcf98a62940b52049f11dc8cbe081bfc7cf3afbd981e3e2ef6b99.html">Reproducir Una Cancion En Spotify.</a></span>
+                > <span class="truncate-60"><a
+                    href="53c5694ec87ddf35918a0460b0ab2b8bc48e8d8d95a7e67c3985e9f0dbf42e22.html">Inicio sesi&oacute;n exitoso. </a></span>
+                > Screenshots
+            </span>
+        </div>
+        <div class="rightbg"></div>
+    </div>
+
+    <div class="clr"></div>
+
+    <!--/* starts second table*/-->
+<div>
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#"><i class="bi bi-journal-check"></i> Overall Test Results</a>
+        </li>
+        <li >
+            <a href="capabilities.html"><i class="bi bi-journal-text"></i> Requirements</a>
+        </li>
+        <li >
+            <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="bi bi-chat-text"></i> Features</a>
+        </li>
+    </ul>
+    <span class="date-and-time"><a href="build-info.html"><i class="bi bi-info-circle"></i></a> Report generated 16-11-2023 12:12</span>
+    <br style="clear:left"/>
+</div>
+
+    <div class="clr"></div>
+
+
+    <div id="contentbody">
+        <div class="titlebar">
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td>
+                            <div>
+                                <h3 class="discreet-story-header">
+                                    <i class="fs-2 bi bi-chat-left-quote large-icon"></i>
+                                    <span class="story-header-title">Reproducir Una Cancion En Spotify. </span>
+                                    <span class="badge tag-badge" style="">Feature</span>
+                                </h3>
+
+                                <div class="discreet-requirement-narrative-title">
+                                Yo como usuario quiero buscar una cancion en Spotify para reproducirla.
+                                </div>
+                            </div>
+
+                        </td>
+                        <td valign="top" align="right">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="story-title">
+                <table class="outcome-header">
+                    <tr>
+                        <td colspan="2" class="test-title-bar">
+                            <span class="outcome-icon"><a href='##beforetable'><i class='bi bi-check-circle-fill success-icon fa-2x' title='SUCCESS'></i></a></span>
+                            <span class="test-case-title">
+                                <span class="success-color">Inicio sesi&oacute;n exitoso.
+                                    <span class="related-issue-title"></span>
+                                </span>
+                            </span>
+
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="clr"></div>
+
+
+    <div id="beforetable"></div>
+    <div id="contenttilttle">
+        <div class="slider-wrapper theme-default">
+            <div id="slider">
+                <img src="18dc2353365b60d5334ca2ac2559df58bc80f86afee2a20065d8335b7e434e97.png" title=" Dado que el usuario abra en el navegador la pagina de Spotify" width="1366"/>
+                <img src="18dc2353365b60d5334ca2ac2559df58bc80f86afee2a20065d8335b7e434e97.png" title=" user opens the browser at https://open.spotify.com/intl-es" width="1366"/>
+                <img src="0ca6e4b0e03e100b7127496ec7f7c1f1013febba20551d19defcfa22ac1fecf0.png" title=" Dado que el usuario abra en el navegador la pagina de Spotify (completed)" width="1366"/>
+                <img src="fa08325217b8aa64990d13f53cd45bc36a7404073a79bf1f14dd4a73f6d79a4d.png" title=" Cuando el usuario ingresa el usuario y contrase&ntilde;a" width="1366"/>
+                <img src="2a36abf72182d9638124b729f6e4be71f1e5316a03230706b98cd82b94359fe1.png" title=" User pagina principal spotify" width="1366"/>
+                <img src="2a36abf72182d9638124b729f6e4be71f1e5316a03230706b98cd82b94359fe1.png" title=" user clicks on boton de inicio de sesion en spotify" width="1366"/>
+                <img src="10054144b605ce6dcaeec1d00d315ee0a517bbe71d027a85846eb2551f5d7122.png" title=" user clicks on boton de inicio de sesion en spotify" width="1366"/>
+                <img src="9c20f9df19531c02b6db4ac424216da78aaf94d16db22046698744526c34a1fd.png" title=" user clicks on boton de inicio de sesion en spotify (completed)" width="1366"/>
+                <img src="e2a75635285c7da7a370d75043f78fa993e1d5582adb9bc24a0f3b0f6d9b24d4.png" title=" User pagina principal spotify (completed)" width="1366"/>
+                <img src="58f035f16ceded36b1a48f7f136fb0c1c6711dd550d5e1778238462531d4cbf6.png" title=" Cuando el usuario ingresa el usuario y contrase&ntilde;a (completed)" width="1366"/>
+                <img src="b7b283ba157831d9a87242c840cc1cb37e8e60c4cd94fae994534a335ba32de2.png" title=" Y presiona la tecla enter" width="1366"/>
+                <img src="b7b283ba157831d9a87242c840cc1cb37e8e60c4cd94fae994534a335ba32de2.png" title=" User inicio sesion" width="1366"/>
+                <img src="dd5dba8d188c9af37b2f21bf6944595aa46491cfa2f8d881ddeafe0fb8753d2c.png" title=" user enters 'diecadman@gmail.com' into Campo de texto para ingresar usuario" width="1366"/>
+                <img src="40bb960deaadf26ff64269f48b0352dbdafcb104a11bf6d6e138af3dee79ec72.png" title=" user enters 'diecadman@gmail.com' into Campo de texto para ingresar usuario (completed)" width="1366"/>
+                <img src="40bb960deaadf26ff64269f48b0352dbdafcb104a11bf6d6e138af3dee79ec72.png" title=" user enters 'Cadena121' into Campo de texto de ingresar Contrase&ntilde;a" width="1366"/>
+                <img src="f156c3db6cedc83db3afc655516bd87b4278e513d10148159a394aa83c005c50.png" title=" user enters 'Cadena121' into Campo de texto de ingresar Contrase&ntilde;a (completed)" width="1366"/>
+                <img src="f156c3db6cedc83db3afc655516bd87b4278e513d10148159a394aa83c005c50.png" title=" user clicks on boton de iniciar sesion" width="1366"/>
+                <img src="18aaa1974020c8a17ef6b25188dea32546be5b4c9ed95c6c0b85dfaa53d0fd0a.png" title=" user clicks on boton de iniciar sesion (completed)" width="1366"/>
+                <img src="18aaa1974020c8a17ef6b25188dea32546be5b4c9ed95c6c0b85dfaa53d0fd0a.png" title=" User inicio sesion (completed)" width="1366"/>
+                <img src="ec068e3ed1ca6bca702e2383c23bb0d37fcb2064424f8a64d7e599c794ce2001.png" title=" Y presiona la tecla enter (completed)" width="1366"/>
+                <img src="0bb44a8d5ef9a4040038f46cbedb87be5ba3bd30535a90314914250e036dcb75.png" title=" Entonces el usuario podra ver sus listas de reproducci&oacute;n." width="1366"/>
+                <img src="0bb44a8d5ef9a4040038f46cbedb87be5ba3bd30535a90314914250e036dcb75.png" title=" Then validaciones should be 'Buscar'" width="1366"/>
+                <img src="c2e2a4272e529efb85a1a1b78aeadc2c50a1a34948dcce8d12a14ac62275cb76.png" title=" Then validaciones should be 'Buscar' (completed)" width="1366"/>
+                <img src="8768d46ff1a8ca0029a247836a155d7dc83e61a5758c48d52fd40996c816b858.png" title=" Entonces el usuario podra ver sus listas de reproducci&oacute;n. (completed): <span class='success-color'>SUCCESS</span>" width="1366"/>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+<div id="beforefooter"></div>
+<div id="bottomfooter">
+    <span class="version">Serenity BDD version 3.6.0</span>
+</div>
+</body>
+</html>

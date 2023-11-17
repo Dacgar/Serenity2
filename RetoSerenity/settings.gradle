@@ -1,0 +1,6 @@
+rootProject.name = 'RetoSerenity'
+include 'src:main:com.spotify.open'
+findProject(':src:main:com.spotify.open')?.name = 'com.spotify.open'
+include 'src:main:com.spotify.open:Interactions'
+findProject(':src:main:com.spotify.open:Interactions')?.name = 'Interactions'
+
