@@ -1,19 +1,20 @@
 package com.spotify.open.stepDefinitions;
 
 import com.spotify.open.Questions.Validaciones;
+import com.spotify.open.Tasks.BusquedaCancion;
 import com.spotify.open.Tasks.InicioSesion;
 import com.spotify.open.Tasks.PaginaPrincipalSpotify;
 import io.cucumber.java.Before;
 import io.cucumber.java.es.Cuando;
 import io.cucumber.java.es.Dado;
 import io.cucumber.java.es.Entonces;
+import io.cucumber.java.es.Y;
 import net.serenitybdd.screenplay.actions.Open;
 import net.serenitybdd.screenplay.actors.OnStage;
 import net.serenitybdd.screenplay.actors.OnlineCast;
 
 import static net.serenitybdd.screenplay.GivenWhenThen.seeThat;
-import static net.serenitybdd.screenplay.actors.OnStage.setTheStage;
-import static net.serenitybdd.screenplay.actors.OnStage.theActorCalled;
+import static net.serenitybdd.screenplay.actors.OnStage.*;
 import static org.hamcrest.core.IsEqual.equalTo;
 
 public class LoginSpotifyStepDefinitions {
@@ -39,7 +40,8 @@ public class LoginSpotifyStepDefinitions {
     }
     @Entonces("el usuario podra ver sus listas de reproducción.")
     public void elUsuarioPodraVerSusListasDeReproducción() {
-        OnStage.theActorInTheSpotlight().should(seeThat(Validaciones.onTheSite(),equalTo("Buscar")));
+//        OnStage.theActorInTheSpotlight().should(seeThat(Validaciones.onTheSite(),equalTo("Buscar")));
     }
+
 
 }

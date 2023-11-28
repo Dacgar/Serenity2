@@ -1,2 +1,2 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"Reproducir una cancion en Spotify.","Inicio sesión exitoso.","FAILURE","2023-11-16T11:33:26.2629463-05:00[America/Bogota]","0.0","27.0"
+"Busqueda y reproduccion de una cancion en Spotify.","Busqueda y seleccion de cancion.","FAILURE","2023-11-24T15:37:53.4168486-05:00[America/Bogota]","0.0","190.19"

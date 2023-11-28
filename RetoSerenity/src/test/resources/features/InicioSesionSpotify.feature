@@ -1,7 +1,7 @@
 #language: es
 
-Característica: Reproducir una cancion en Spotify.
-  Yo como usuario quiero buscar una cancion en Spotify para reproducirla.
+Característica: inicio sesion en Spotify.
+  Yo como usuario quiero realizar el inicio de sesion en Spotify.
 
   Escenario: Inicio sesión exitoso.
     Dado que el usuario abra en el navegador la pagina de Spotify

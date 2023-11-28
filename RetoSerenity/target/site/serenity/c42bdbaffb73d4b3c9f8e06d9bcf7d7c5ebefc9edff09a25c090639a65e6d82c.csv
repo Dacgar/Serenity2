@@ -1,2 +1,6 @@
 "Story","Title","Result","Date","Stability","Duration (s)"
-"Reproducir una cancion en Spotify.","Inicio sesión exitoso.","SUCCESS","2023-11-16T11:54:41.3367204-05:00[America/Bogota]","0.0","23.51"
+"Busqueda de una cancion en Spotify.","Busqueda de cancion.","PENDING","2023-11-24T09:25:21.2763278-05:00[America/Bogota]","0.0","18.18"
+"Busqueda y reproduccion de una cancion en Spotify.","Busqueda y seleccion de cancion.","SUCCESS","2023-11-24T14:23:25.7692036-05:00[America/Bogota]","0.0","23.22"
+"Reproducir una cancion en Spotify.","Inicio sesión exitoso.","SUCCESS","2023-11-24T09:24:31.0646469-05:00[America/Bogota]","0.0","15.15"
+"inicio sesion en Spotify.","Inicio sesión exitoso.","SUCCESS","2023-11-24T14:23:51.1185217-05:00[America/Bogota]","0.0","14.43"
+"inicio sesion en Spotify.","Inicio sesión exitoso.","SUCCESS","2023-11-24T15:14:27.7476496-05:00[America/Bogota]","0.0","22.49"
