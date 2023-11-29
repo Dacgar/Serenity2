@@ -15,7 +15,7 @@ public class BusquedaCancion implements Task {
     public <T extends Actor> void performAs(T actor) {
         actor.attemptsTo(
                 Click.on(BTN_BUSCAR),
-                Enter.keyValues("Crepp").into(TXT_ESCRIBIR_NOMBRE_CANCION)
+                Enter.keyValues("Creep").into(TXT_ESCRIBIR_NOMBRE_CANCION)
         );
 }
 
